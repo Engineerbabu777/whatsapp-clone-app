@@ -6,16 +6,19 @@ import { NavigationContainer } from '@react-navigation/native'
 import TopTabBar from './src/navigation/TopTabBar'
 import { createStackNavigator } from '@react-navigation/stack'
 import ChatScreen from './src/screens/ChatScreen'
+import ContactScreen from './src/screens/ContactScreen'
 
 const Stack = createStackNavigator();
 
 export default function App () {
   return (
-    <NavigationContainer>
+    <NavigationContainer >
         <StatusBar backgroundColor={Colors.primaryColor} style='light' />
-        <Stack.Navigator>
-          <Stack.Screen name='HomeScreen' component={HomeScreen} options={{headerShown:false}}/>
+        <Stack.Navigator >
+          <Stack.Screen name='HomeScreen' component={HomeScreen} options={{headerShown:false}} />
           <Stack.Screen name='ChatScreen' component={ChatScreen} options={{headerShown:false}}/>
+          <Stack.Screen name='ContactScreen' component={ContactScreen} options={{headerShown:false}}/>
+
 
         </Stack.Navigator>
     </NavigationContainer>

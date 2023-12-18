@@ -9,8 +9,9 @@ import React from 'react'
 import ChatList from '../components/ChatList'
 import VectorIcon from '../utils/VectorIcons'
 import { Colors } from '../theme/Colors'
+import { NavigationProp } from '@react-navigation/native'
 
-export default function ChatListScreen () {
+export default function ChatListScreen ({navigation}:{navigation:NavigationProp}) {
 
   return (
     <View style={styles.container}>
@@ -19,6 +20,7 @@ export default function ChatListScreen () {
       </ScrollView>
       <TouchableOpacity
         style={styles.contactIcon}
+        onPress={() => navigation.navigate('ContactScreen')}
     
       >
         <VectorIcon

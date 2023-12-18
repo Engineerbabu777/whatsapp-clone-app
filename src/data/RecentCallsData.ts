@@ -1,0 +1,55 @@
+
+export const RecentCallsData = [
+  {
+    id: 1,
+    name: 'Sameer Kashyap',
+    profileImg: require('../assets/user4.jpeg'),
+    time: 'June 15, 6:32 PM',
+    incoming: true,
+    outgoing: false,
+    video: true,
+    audio: false,
+  },
+  {
+    id: 2,
+    name: 'Shivam Joshi',
+    profileImg: require('../assets/user4.jpeg'),
+    time: 'Yesterday, 9:43 PM',
+    incoming: false,
+    outgoing: true,
+    video: true,
+    audio: false,
+  },
+  {
+    id: 3,
+    name: 'Sanju',
+    profileImg: require('../assets/user4.jpeg'),
+    time: 'Today, 6:32 PM',
+    incoming: true,
+    outgoing: false,
+    video: true,
+    audio: false,
+  },
+  {
+    id: 4,
+    name: 'Avinash Jain',
+    profileImg: require('../assets/user4.jpeg'),
+    time: 'May 2, 9:43 PM',
+    incoming: true,
+    outgoing: false,
+    video: false,
+    audio: true,
+  },
+  {
+    id: 5,
+    name: 'Anubhav Koli',
+    profileImg: require('../assets/user4.jpeg'),
+    time: 'April 16, 6:32 PM',
+    incoming: false,
+    outgoing: true,
+    audio: true,
+    video: false,
+  },
+  
+  
+];
